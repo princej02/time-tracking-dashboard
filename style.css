@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+button {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  font-family: 'Rubik', sans-serif;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: left;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(226, 43%, 10%);
+  padding: 2rem;
+}
+
+.container__grid {
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+}
+
+.container__grid-1 {
+  grid-row: 1 / 3;
+}
+
+.profile__Card {
+  border-radius: 10px;
+  background: hsl(235, 46%, 20%);
+}
+
+.profile__Card-profile {
+  padding: 2rem;
+  background: hsl(246, 80%, 60%);
+  border-radius: 10px 10px 15px 15px;
+}
+
+.profile__Card-profile-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.profile__Card-profile-img img {
+  width: 100%;
+}
+
+.profile__Card-profile-name {
+  margin: 2.5rem 0;
+}
+
+.profile__Card-profile-name span {
+  color: hsl(236, 100%, 87%);
+}
+
+
+.profile__Card-duration {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__Card-duration button {
+  text-decoration: none;
+  color: hsl(236, 100%, 87%);
+  font-weight: 300;
+  margin: .8rem 0;
+  transition: color;
+}
+
+.profile__Card-duration button:hover, 
+.profile__Card-duration button:focus, 
+.profile__Card-duration button:active {
+  color: white;
+  cursor: pointer;
+}
+
+
+
+/* Activities Card */
+.activities__card {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  position: relative;
+}
+
+.activities__card-cover {
+  position: absolute;
+  padding: 2rem;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 20px;
+}
+
+.activities__card-cover:hover {
+  cursor: pointer;
+  background-color: hsl(236, 31%, 35%);
+}
+
+.content-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-ellipsis img {
+  cursor: pointer;
+}
+
+.card-activity {
+  font-size: 18px;
+}
+
+.content-body {
+  margin: 1rem 0 .5rem;
+}
+
+.time {
+  font-size: 3rem;
+}
+
+.content-footer p {
+  font-size: 14px;
+  color: hsl(236, 100%, 87%);
+}
+
+
+.work {
+  background: hsl(15, 100%, 70%); 
+  background-image: url(images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-position: top -5% right 9%;
+}
+
+.play {
+  background: hsl(195, 74%, 62%);
+  background-image: url(images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position: top -5% right 9%;
+}
+
+.study {
+  background: hsl(348, 100%, 68%);
+  background-image: url(images/icon-study.svg);
+  background-repeat: no-repeat;
+  background-position: top -5% right 9%;
+}
+
+.exercise {
+  background: hsl(145, 58%, 55%);
+  background-image: url(images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-position: top 2% right 9%;
+}
+
+.social {
+  background: hsl(264, 64%, 52%);
+  background-image: url(images/icon-social.svg);
+  background-repeat: no-repeat;
+  background-position: top -5% right 9%;
+}
+
+.self-care {
+  background: hsl(43, 84%, 65%);
+  background-image: url(images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-position: top -5% right 9%;
+}
+
+/* Media Queries */
+
+@media (max-width: 870px) {
+  h1 {
+    font-size: 2rem;
+  }
+  button {
+    text-align: center;
+  }
+  .wrapper {
+    padding: 2rem;
+  }
+  .container__grid {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+  }
+
+  /* Profile section */
+  .profile__Card {
+
+  }
+
+  .profile__Card-profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .profile__Card-profile-name {
+    margin: 0;
+  }
+  .profile__Card-duration {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* Activities section */
+  .content-body {
+    margin: 0;
+  }
+
+  .container__grid-1 {
+    grid-row: 1;
+  }
+
+  .card-cover-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .test {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .time {
+    font-size: 2rem;
+  }
+
+  
+  
+}
+
+
+@media (max-width: 438px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .profile__Card-profile-img {
+    width: 60px;
+    height: 60px;
+  }
+  .profile__Card-duration {
+    padding: .5rem 1.5rem;
+  }
+  
+
+
+}
+
+@media (max-width: 370px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+  .profile__Card-profile-name span{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 345px) {
+  h1 {
+    font-size: 1rem;
+  }
+}
+
+

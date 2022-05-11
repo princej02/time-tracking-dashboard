@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="index.js" defer></script>
+  <title>Time tracking dashboard</title>
+
+</head>
+<body>
+  <main class="wrapper">
+    <section class="container__grid">
+      <div class="container__grid-1">
+        <div class="profile__Card">
+          <div class="profile__Card-profile">
+            <div class="profile__Card-profile-img">
+              <img src="images/image-jeremy.png" alt="">
+            </div>
+            <div class="profile__Card-profile-name">
+              <span>Report for</span>
+              <h1>Jeremy Robson</h1>
+            </div>
+          </div>
+          <div class="profile__Card-duration">
+            <button id="daily" href="">Daily</button>
+            <button id="weekly" href="" >Weekly</button>
+            <button id="monthly" href="">Monthly</button>
+          </div>
+        </div>
+      </div>
+      <div class="container__grid-2">
+        <div class="activities__card work">
+          <div class="activities__card-cover">
+            <div class="card-cover-content">
+              <div class="content-head">
+                <p class="card-activity">Work</p>
+                <div class="card-ellipsis">
+                  <img src="images/icon-ellipsis.svg" alt="card-ellipsis">
+                </div>
+              </div>
+              <div class="test">
+                <div class="content-body">
+                  <h1 class="time" id="workCurrent">32hrs</h1>
+                </div>
+                <div class="content-footer">
+                  <p id="workPrevious">Last Week - 32hrs</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container__grid-3">
+        <div class="activities__card play">
+          <div class="activities__card-cover">
+            <div class="card-cover-content">
+              <div class="content-head">
+                <p class="card-activity">Play</p>
+                <div class="card-ellipsis">
+                  <img src="images/icon-ellipsis.svg" alt="card-ellipsis">
+                </div>
+              </div>
+              <div class="test">
+                <div class="content-body">
+                  <h1 class="time">10hrs</h1>
+                </div>
+                <div class="content-footer">
+                  <p>Last Week - 8hrs</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container__grid-4">
+        <div class="activities__card study">
+          <div class="activities__card-cover">
+            <div class="card-cover-content">
+              <div class="content-head">
+                <p class="card-activity">Study</p>
+                <div class="card-ellipsis">
+                  <img src="images/icon-ellipsis.svg" alt="card-ellipsis">
+                </div>
+              </div>
+              <div class="test">
+                <div class="content-body">
+                  <h1 class="time">4hrs</h1>
+                </div>
+                <div class="content-footer">
+                  <p>Last Week - 7hrs</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container__grid-5">
+        <div class="activities__card exercise">
+          <div class="activities__card-cover">
+            <div class="card-cover-content">
+              <div class="content-head">
+                <p class="card-activity">Exercise</p>
+                <div class="card-ellipsis">
+                  <img src="images/icon-ellipsis.svg" alt="card-ellipsis">
+                </div>
+              </div>
+              <div class="test">
+                <div class="content-body">
+                  <h1 class="time">4hrs</h1>
+                </div>
+                <div class="content-footer">
+                  <p>Last Week - 5hrs</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container__grid-6">
+        <div class="activities__card social">
+          <div class="activities__card-cover">
+            <div class="card-cover-content">
+              <div class="content-head">
+                <p class="card-activity">Social</p>
+                <div class="card-ellipsis">
+                  <img src="images/icon-ellipsis.svg" alt="card-ellipsis">
+                </div>
+              </div>
+              <div class="test">
+                <div class="content-body">
+                  <h1 class="time">5hrs</h1>
+                </div>
+                <div class="content-footer">
+                  <p>Last Week - 10hrs</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container__grid-7">
+        <div class="activities__card self-care">
+          <div class="activities__card-cover">
+            <div class="card-cover-content">
+              <div class="content-head">
+                <p class="card-activity">Self Care</p>
+                <div class="card-ellipsis">
+                  <img src="images/icon-ellipsis.svg" alt="card-ellipsis">
+                </div>
+              </div>
+              <div class="test">
+                <div class="content-body">
+                  <h1 class="time">2hrs</h1>
+                </div>
+                <div class="content-footer">
+                  <p>Last Week - 2hrs</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
